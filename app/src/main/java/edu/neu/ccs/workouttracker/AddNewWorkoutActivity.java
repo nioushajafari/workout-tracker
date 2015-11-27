@@ -41,13 +41,18 @@ public class AddNewWorkoutActivity extends Activity{
     public void enduranceQuestions(View v) {
         // view the endurance questions
         LinearLayout endurance = (LinearLayout) findViewById(R.id.enduranceLayout);
+        LinearLayout power = (LinearLayout) findViewById(R.id.powerLayout);
         endurance.setVisibility(View.VISIBLE);
+        power.setVisibility(View.GONE);
+
     }
 
     public void powerQuestions(View view) {
         // view the endurance questions
         LinearLayout power = (LinearLayout) findViewById(R.id.powerLayout);
+        LinearLayout endurance = (LinearLayout) findViewById(R.id.enduranceLayout);
         power.setVisibility(View.VISIBLE);
+        endurance.setVisibility(View.GONE);
 
     }
 
